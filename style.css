@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+.help{
+    position: fixed;
+    color: white;
+    right: 24px; 
+    bottom: 13px;
+    padding: 2px 25px;
+    border-radius: 25px;
+    background-color:#4C5FD5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.help span{
+    border: 2px white solid;
+    padding: 1px 5px 0.1px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    height: 88px;
+}
+header span{
+    margin-left: 8px;
+}
+
+header h3{
+    margin-right: 8px;
+}
+
+header div:nth-child(1){
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+header div:nth-child(1) img{
+    margin-right: 10px;
+}
+header div:nth-child(1) h3, header div:nth-child(1) span{
+    font-size: 1.5rem;
+}
+
+header div:nth-child(1) h3:hover{
+    color:gray;
+}
+
+header div:nth-child(1) span:hover{
+    text-decoration: underline;
+}
+
+header div:nth-child(2) {
+    margin-right: 120px
+}
+
+header .bt1{
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+header .bt2{
+    background-color: #4C5FD5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 30px;
+    font-size: 26px;
+    transition: 0.3s;
+}
+header .bt2:hover{
+    background-color: white;
+    color: #4C5FD5
+}
+
+/* FIM DO HEADER */
+
+.HowCanWeHelp{
+    background-color: #dadbf1;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    /* height: 397px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.HowCanWeHelp h1{
+    font-size: 75px;
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    
+}
+.HowCanWeHelp input{
+    height: 66px;
+    width: 40%;
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 22px;
+    padding: 16px;
+    background-image: url(./images/bx-right-arrow-alt.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+/* FIM Section HowCanWeHelp */
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 120px 180px ;
+    /* margin-top: 150px;
+    margin-left: 180px;
+    margin-bottom: 120px; */
+    gap: 80px;
+}
+.container-grid{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.container-grid img{
+    width: 6rem;
+}
+
+.container-grid h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container-grid p{
+    font-size: 20px;
+}
+
+.grid a{
+    color: #4C5FD5;
+    cursor: pointer;
+    font-size: 20px;
+}
+.grid a:hover{
+    text-decoration: underline;
+}
+
+/* FIM Section Grid */
+
+footer{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    height: 350px;
+    padding-top: 40px;
+}
+
+footer h1{
+    font-size: 1.5rem
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer div:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 0.1px;
+    font-size:18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+footer div:nth-child(5) img{
+    width: 32px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1030px){
+    header div:nth-child(2){
+        background-color: red;
+        visibility:collapse;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        padding:110px;
+    }
+}
