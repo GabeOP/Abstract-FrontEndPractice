@@ -211,12 +211,18 @@ footer div:nth-child(5) img{
 
 @media (max-width: 1030px){
     header div:nth-child(2){
-        background-color: red;
-        visibility:collapse;
+        visibility:hidden;
     }
     .grid{
         display: flex;
         flex-direction: column;
         padding:110px;
+    }
+
+}
+
+@media (max-width: 670px){
+    footer div:nth-child(5){
+        visibility: hidden;
     }
 }
