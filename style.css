@@ -100,23 +100,19 @@ header .bt2:hover{
     background-color: #dadbf1;
     padding-top: 80px;
     padding-bottom: 115px;
-    /* height: 397px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
 }
 
 .HowCanWeHelp h1{
-    font-size: 75px;
+    font-size: 5em;
     width: 50%;
-    margin: 20px;
     text-align: center;
     
 }
 .HowCanWeHelp input{
-    height: 66px;
     width: 40%;
     border-radius: 6px;
     border: 1px solid;
@@ -133,10 +129,7 @@ header .bt2:hover{
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 120px 180px ;
-    /* margin-top: 150px;
-    margin-left: 180px;
-    margin-bottom: 120px; */
+    padding: 120px 180px;
     gap: 80px;
 }
 .container-grid{
@@ -217,6 +210,12 @@ footer div:nth-child(5) img{
         display: flex;
         flex-direction: column;
         padding:110px;
+    }
+
+    .HowCanWeHelp h1{
+        font-size: 3em;
+        width: 50%;
+        text-align: center;
     }
 
 }
